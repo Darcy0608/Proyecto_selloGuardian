@@ -1,0 +1,66 @@
+/* Registro.css */
+.registro-page {
+  flex: 1;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url('https://images.unsplash.com/photo-1590420485404-f86d22b8abf8?q=80&w=1000');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-card {
+  background: rgba(0, 0, 0, 0.7); /* Oscurecemos un poco para que se lea mejor */
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Más espacio entre filas */
+  margin-top: 25px;
+}
+
+.f-row {
+  display: flex;
+  gap: 15px; /* Espacio entre Nombre y Apellido */
+  width: 100%;
+}
+
+.f-row input {
+  flex: 1; /* Esto hace que ambos midan lo mismo y ocupen el ancho disponible */
+  width: 0; /* Truco para que flex-grow funcione bien en inputs */
+}
+
+.registro-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+
+.btn-registro {
+  background-color: #00df81;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-registro:hover {
+  background-color: #00b368;
+}

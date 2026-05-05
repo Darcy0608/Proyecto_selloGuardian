@@ -1,0 +1,36 @@
+/* Header.css */
+.header {
+  padding: 15px 50px;
+  background-color: rgba(46, 204, 113, 0.8); /* Verde con transparencia */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute; /* Para que flote sobre el fondo */
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white; /* Texto blanco para que resalte */
+  font-weight: 500;
+}
+
+/* El botón de registrarse ahora es visible */
+.btn-reg {
+  background-color: #ffffff;
+  color: #2ecc71 !important;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-reg:hover {
+  background-color: #f0f0f0;
+}
