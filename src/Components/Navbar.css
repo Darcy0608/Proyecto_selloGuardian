@@ -1,0 +1,32 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Esto separa los links del perfil */
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px 8px 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.profile-badge-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+  justify-content:right;
+}
+
+.avatar-icon-nav {
+  background-color: #2ecc71;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

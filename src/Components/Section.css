@@ -1,0 +1,132 @@
+.denuncia-container {
+  background-size: cover; /* Para que la img cubra todo el espacio */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Para que no choque con el footer y ocupe toda la pantalla*/
+  padding: 20px;
+  width: 100%;
+  font-size: 1rem;
+  background-image: url('../assets/fondo_denuncia.jpeg');
+}
+
+.glass-effect {
+  background: none; /* Color base transparente */
+  backdrop-filter: blur(15px);    /* El desenfoque */
+  -webkit-backdrop-filter: blur(15px);  
+  border: 1px solid rgba(211, 32, 32, 0.2); /* Borde sutil */
+  border-radius: 20px;                   
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+.denuncia-card {
+  width: 100%;
+  padding: 30px;
+  color: white;
+  max-width: 500px;
+  text-align:center;
+}
+
+.denuncia-card h2{
+  margin-bottom: 0px;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.titulo{
+  font-size:30px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 3px 4px 5px rgb(116, 122, 126);
+}
+
+.campo {
+  margin-bottom: 20px;
+  text-align:left;
+  color:white;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.campo textarea, .campo input, .campo select {
+  width: 100%;
+  padding: 12x;
+  background: rgba(130, 120, 120, 0.2);
+  border: 1px solid rgba(128, 53, 53, 0.2);
+  border-radius: 8px;
+  color: rgb(234, 233, 233);
+}
+
+.campo textarea{
+  height: 110px;
+}
+
+.campo input{
+  height: 50px;
+}
+
+.campo select{
+  height: 30px;
+}
+
+.campo select optgroup {
+  background-color: #ffffff; 
+  color: #000000; /* Un negro para que resalten los títulos */
+  font-weight: bold;
+}
+
+.file input{
+  position: absolute;
+  opacity: 0;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-drop{
+  background: rgba(130, 120, 120, 0.2); 
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+  border: 2px dashed #929392;         
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  color: #bdc3c7;
+}
+
+.file-drop i {
+  font-size: 2rem;
+  display: block;                     /* Pone el icono arriba */
+  margin-bottom: 10px;
+}
+
+.drop-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;         /* Subrayado de tu imagen */
+  cursor: pointer;
+}
+
+.btn-enviar {
+  background-color: #27ae60;
+  color: rgb(242, 240, 240);
+  width: 100%;
+  margin-top: 40px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-enviar:hover {
+  transform: scale(1.05);
+  background-color: rgb(7, 60, 15);
+}
+
